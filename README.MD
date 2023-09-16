@@ -1,4 +1,4 @@
-# (Personal Landing Page)[https://ehoxorg.github.io/]
+# [Personal Landing Page](https://ehoxorg.github.io/)
 
 ## Theme by:
 Aerial by HTML5 UP
