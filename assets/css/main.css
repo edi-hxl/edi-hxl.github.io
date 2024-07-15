@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	color:#90dddc;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -100,7 +102,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: CustomFont;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
@@ -128,6 +130,21 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 	}
+
+	@font-face {
+		font-family: 'CustomFont';
+		src: url('../webfonts/Afacad-Italic-VariableFont_wght.ttf') format('truetype');
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	@font-face {
+		font-family: 'CustomFont';
+		src: url('../webfonts/Afacad-VariableFont_wght.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -226,12 +243,16 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #90dddc url("images/bg.webp") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
 		opacity: 1;
 		position: fixed;
+		filter: grayscale(100%);
+    	-webkit-filter: grayscale(100%); /* For Safari */
+		filter: brightness(5%);
+    	-webkit-filter: brightness(5%); /* For Safari */
 		top: 0;
 	}
 
@@ -556,7 +577,7 @@ input, select, textarea {
 		#header h1 {
 			font-size: 4.35em;
 			font-weight: 900;
-			letter-spacing: -0.035em;
+			letter-spacing: 0.05em;
 			line-height: 1em;
 		}
 
