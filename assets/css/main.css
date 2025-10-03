@@ -243,7 +243,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #90dddc url("images/bg.webp") bottom left;
+		background: #90dddc url("images/mindmaps.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -1100,3 +1100,28 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+		.beige, #header p.beige {
+			color: beige;
+			text-align: justify;
+			width: 40%;
+			margin: auto;
+		}
+
+		@media (max-width: 1024px) {
+			.beige, #header p.beige {
+				width: 70%;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.beige, #header p.beige {
+				width: 90%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.beige, #header p.beige {
+				width: 98%;
+			}
+		}
